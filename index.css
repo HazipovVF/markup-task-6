@@ -1,0 +1,327 @@
+html
+{
+
+    font: 81.25% Arial, Helvetica, sans-serif;
+}
+
+main
+{
+    display: grid;
+    grid-template-areas: 'pl center center center right'
+        'left center center center right'
+        'sn center center center right';
+    height: 100vh;
+}
+
+.left-column
+{
+    margin-right: 100px;
+    grid-area: left;
+
+}
+
+.logo
+{
+    position: relative;
+    left: 80%;
+    top: -77px;
+}
+
+.center
+{
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.news
+{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+}
+
+.news a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #6da2e1;
+    margin-right: 8px;
+
+}
+
+.news a:first-child
+{
+    color: #0054b9;
+}
+
+.news ul
+{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.news li
+{
+    line-height: 25px;
+}
+
+.news span
+{
+    font-size: 12px;
+    color: grey;
+}
+
+.advertisment
+{
+    margin-left: 120px;
+
+}
+
+.advertisment img
+{
+    margin-bottom: 15px;
+
+}
+
+.advertisment p
+{
+    color: #0054b9;
+    margin: 0;
+    font-size: 18px;
+}
+
+.advertisment p:last-child
+{
+    margin-bottom: 17px;
+}
+
+.money
+{
+    margin-top: -27px;
+}
+
+.money span
+{
+    color: grey;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.money strong
+{
+    margin-right: 5px;
+}
+
+nav
+{
+    margin-top: 25px;
+}
+
+nav a
+{
+    color: #0054b9;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.search
+{
+    margin-top: 10px;
+}
+
+.search input[type='text']
+{
+    width: 750px;
+    height: 30px;
+    border: 2px solid #ffdb4d;
+    position: relative;
+}
+
+.search input[type='button']
+{
+    height: 36px;
+    width: 100px;
+    margin-left: -5px;
+    background-color: #ffdb4d;
+    border: 2px solid #ffdb4d;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.info p
+{
+    margin: 7px 0;
+}
+
+.info p span
+{
+    color: grey;
+}
+
+.info img
+{
+    width: 750px;
+    margin-top: 8px;
+}
+
+.more-info
+{
+    display: flex;
+    margin-top: 15px;
+}
+
+.more-info a
+{
+    color: #0054b9;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.more-info img
+{
+    width: 32px;
+    margin: 0;
+    position: relative;
+    top: 10px;
+}
+
+.weather > span
+{
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    top: 2px;
+}
+
+.weather div
+{
+    margin-top: 30px;
+}
+
+.weather div ul
+{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.weather div li
+{
+    line-height: 25px;
+    list-style-type: none;
+}
+
+.weather div li:last-child
+{
+    margin-bottom: 20px;
+}
+
+.weather div li > span
+{
+    font-weight: bold;
+    color: #000;
+}
+
+.tv-program
+{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.tv-program > span
+{
+    font-size: 18px;
+}
+
+.tv-program div
+{
+    margin-top: 31px;
+}
+
+.tv-program div ul
+{
+    line-height: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tv-program div ul span
+{
+    color: grey;
+}
+
+.films
+{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.films p
+{
+    font-weight: bold;
+}
+
+.films div
+{
+    margin-top: 31px;
+}
+
+.films div ul
+{
+    line-height: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.films div ul span
+{
+    color: grey;
+}
+
+.right-column
+{
+    grid-area: right;
+}
+
+.right-column .data
+{
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 60px;
+}
+
+.right-column p
+{
+    color: #000;
+    margin-top: 10px;/*никак не могу понять почему не работает*/
+    margin-left: 10px;
+}
+
+.right-column p:first-child
+{
+    font-weight: bold;
+}
+
+.right-column p:first-child:first-letter
+{
+    color: #c00;
+}
+
+.right-column span
+{
+    color: grey;
+}
+
+a:hover,
+li:hover
+{
+    color: #c00 !important;
+}
