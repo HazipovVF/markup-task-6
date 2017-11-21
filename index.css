@@ -115,6 +115,7 @@ main
 
 nav
 {
+    position: relative;
     margin-top: 25px;
 }
 
@@ -133,7 +134,7 @@ nav a
 
 .search input[type='text']
 {
-    width: 750px;
+    width: 80%;
     height: 30px;
     border: 2px solid #ffdb4d;
     position: relative;
@@ -294,14 +295,14 @@ input:focus
 {
     box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
     margin-top: 10px;
-    margin-right: 10px;
-    height: 60px;
+    height: 70px;
+    width: 140px;
+    padding: 5px;
 }
 
 .right-column p
 {
     color: #000;
-    margin-top: 10px;/*никак не могу понять почему не работает*/
     margin-left: 10px;
 }
 
