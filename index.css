@@ -1,6 +1,5 @@
 html
 {
-
     font: 81.25% Arial, Helvetica, sans-serif;
 }
 
@@ -11,6 +10,79 @@ main
         'left center center center right'
         'sn center center center right';
     height: 100vh;
+}
+
+main > input
+{
+    display: none;
+}
+
+input[name='weather']:not(:checked) ~ .center .under-search .info .weather,
+input[name='links']:not(:checked) ~ .center .under-search .info .all-links,
+input[name='traffic']:not(:checked) ~ .center .under-search .info .traffic,
+input[name='tv']:not(:checked) ~ .center .under-search .info .tv-program,
+input[name='map']:not(:checked) ~ .center .under-search .info .map,
+input[name='films']:not(:checked) ~ .center .under-search .info .films
+{
+    display: none;
+}
+
+input[name='weather']:not(:checked) ~ .settings .settings-list label[
+for='wthr'],
+input[name='links']:not(:checked) ~ .settings .settings-list label[for='lnks'],
+input[name='traffic']:not(:checked) ~ .settings .settings-list label[
+for='trffc'],
+input[name='tv']:not(:checked) ~ .settings .settings-list label[for='tv'],
+input[name='map']:not(:checked) ~ .settings .settings-list label[for='map'],
+input[name='films']:not(:checked) ~ .settings .settings-list label[for='flms']
+/*я не хотел переносить, меня заставилииии*/
+{
+    font-weight: normal;
+}
+
+.settings
+{
+    width: 120px;
+    position: absolute;
+    right: 13%;
+    top: 18px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    padding: 10px;
+    background-color: white;
+}
+
+.settings p
+{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.settings-list
+{
+    display: none;
+}
+
+.settings:hover .settings-list
+{
+    display: block;
+}
+
+.settings-list label
+{
+    margin-left: 0;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.settings-list label:hover
+{
+    font-weight: bold;
+}
+
+.settings-list label:hover::first-letter
+{
+    color: #c00;
 }
 
 .left-column
@@ -24,7 +96,7 @@ main
 {
     position: relative;
     left: 80%;
-    top: -77px;
+    top: -84px;
 }
 
 .center
@@ -157,131 +229,151 @@ input:focus
     outline: none;
 }
 
-.info p
+.under-search p
 {
     margin: 7px 0;
 }
 
-.info p span
+.under-search p span
 {
     color: grey;
 }
 
-.info img
+.under-search img
 {
     width: 750px;
     margin-top: 8px;
 }
 
-.more-info
+.info
 {
     display: flex;
     margin-top: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 320px;
+    align-content: flex-start;
 }
 
-.more-info a
+.info a
 {
     color: #0054b9;
     text-decoration: none;
     font-size: 18px;
 }
 
-.more-info img
+.info img
 {
     width: 32px;
     margin: 0;
-    position: relative;
-    top: 10px;
 }
 
-.weather > span
+.weather
+{
+    margin-bottom: 30px;
+    width: 264px;
+    position: relative;
+}
+
+.weather span
 {
     font-size: 18px;
     color: #000;
-    position: relative;
-    top: 2px;
+    margin-left: 40px;
 }
 
-.weather div
+.weather img
 {
-    margin-top: 30px;
+    position: absolute;
+    top: -7px;
 }
 
-.weather div ul
+.all-links
+{
+    width: 264px;
+    margin-bottom: 30px;
+}
+
+.all-links ul
 {
     padding: 0;
     margin-bottom: 0;
 }
 
-.weather div li
+.all-links li
 {
     line-height: 25px;
     list-style-type: none;
 }
 
-.weather div li:last-child
-{
-    margin-bottom: 20px;
-}
-
-.weather div li > span
+.all-links span
 {
     font-weight: bold;
     color: #000;
 }
 
-.tv-program
+.traffic
 {
-    margin-top: 5px;
-    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 244px;
+    position: relative;
 }
 
-.tv-program > span
+.traffic img
+{
+    position: absolute;
+    top: -4px;
+}
+
+.traffic span
 {
     font-size: 18px;
+    margin-left: 40px;
 }
 
-.tv-program div
+.tv-program
 {
-    margin-top: 31px;
+    width: 244px;
+    margin-bottom: 30px;
 }
 
-.tv-program div ul
+.tv-program ul
 {
     line-height: 25px;
     list-style-type: none;
     padding: 0;
 }
 
-.tv-program div ul span
+.tv-program span
 {
     color: grey;
 }
 
-.films
+.map
 {
-    margin-top: 15px;
-    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 244px;
 }
 
-.films p
+.map p
 {
     font-weight: bold;
 }
 
-.films div
+.films
 {
-    margin-top: 31px;
+    width: 224px;
+    margin-bottom: 30px;
 }
 
-.films div ul
+.films ul
 {
     line-height: 25px;
     list-style-type: none;
     padding: 0;
 }
 
-.films div ul span
+.films span
 {
     color: grey;
 }
@@ -298,6 +390,8 @@ input:focus
     height: 70px;
     width: 140px;
     padding: 5px;
+    position: relative;
+    right: -30%;
 }
 
 .right-column p

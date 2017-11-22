@@ -7,6 +7,25 @@
 </head>
 <body>
     <main>
+            <input type="checkbox" name="weather" id="wthr" checked>
+            <input type="checkbox" name="links" id="lnks" checked>
+            <input type="checkbox" name="traffic" id="trffc" checked>
+            <input type="checkbox" name="tv" id="tv" checked>
+            <input type="checkbox" name="map" id="map" checked>
+            <input type="checkbox" name="films" id="flms" checked>
+        <section class="settings">
+                <p>Настройка</p>
+                <div class="settings-list">
+
+                    <label for="wthr">Погода</label>
+                    <label for="lnks">Посещаемое</label>
+                    <label for="trffc">Пробки</label>
+                    <label for="tv">Телепрограмма</label>
+                    <label for="map">Карта</label>
+                    <label for="flms">Афиша</label>
+                </div>
+        </section>
+
         <section class="left-column">
             <div class="logo">
                 <img src="yandex.png" alt="яндекс">
@@ -58,58 +77,62 @@
                 <input type="button" value="Найти">
             </section>
 
-            <section class="info">
+            <section class="under-search">
                 <p>Найдётся всё. Например, <span>где говорят на креольском</span></p>
                 <img src="advert2.jpg" alt="реклама">
-                <div class="more-info">
+                <div class="info">
                     <div class="weather">
                         <a href="">Погода</a>
                         <img src="sky.png" alt="погода">
                         <span>−2 °C</span>
-                        <p>Утро −2,  день 0</p> 
-                        <div>
-                            <a href="">Посещаемое</a>
-                            <ul>
-                                <li><span>Маркет</span> — товары из Китая</li>
-                                <li><span>Авто.ру</span> — Хёндай Туссан</li>
-                                <li><span>Недвижимость</span> — аренда 1-комнатной</li>
-                                <li><span>Работа</span> — вахтовая работа</li>
-                                <li><span>Авиабилеты</span> — из Екатеринбурга</li>
-                                <li><span>Картинки</span> — осенние пейзажи</li>
-                                <li><span>Видео</span> — про пермских богатырей</li>
-                            </ul>
-                        </div>
+                        <p>Утро −2,  день 0</p>
                     </div>
-                    <div class="tv-program">
+
+                    <div class="all-links">
+                        <a href="">Посещаемое</a>
+                        <ul>
+                            <li><span>Маркет</span> — товары из Китая</li>
+                            <li><span>Авто.ру</span> — Хёндай Туссан</li>
+                            <li><span>Недвижимость</span> — аренда 1-комнатной</li>
+                            <li><span>Работа</span> — вахтовая работа</li>
+                            <li><span>Авиабилеты</span> — из Екатеринбурга</li>
+                            <li><span>Картинки</span> — осенние пейзажи</li>
+                            <li><span>Видео</span> — про пермских богатырей</li>
+                        </ul>
+                    </div>
+
+                    <div class="traffic">
                         <a href="">Пробки</a>
                         <img src="green.png" alt="">
                         <span>1 балл</span>
                         <p>На дорогах свободно</p>
-                        <div>
-                            <a href="">Телепрограмма</a>
-                            <ul>
-                                <li>01:00 Место встречи <span>НТВ</span></li>
-                                <li>01:00 Тёмный мир. Равновесие <span>СТС</span></li>
-                                <li>01:10 Такое Кино! <span>ТНТ</span></li>
-                                <li>01:15 Время покажет <span>Первый</span></li>
-                                <li>01:15 C.S.I. Место преступления <span>ТВ-3</span></li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="films">
+
+                    <div class="tv-program">
+                        <a href="">Телепрограмма</a>
+                        <ul>
+                            <li>01:00 Место встречи <span>НТВ</span></li>
+                            <li>01:00 Тёмный мир. Равновесие <span>СТС</span></li>
+                            <li>01:10 Такое Кино! <span>ТНТ</span></li>
+                            <li>01:15 Время покажет <span>Первый</span></li>
+                            <li>01:15 C.S.I. Место преступления <span>ТВ-3</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="map">
                         <a href="">Карта Екатеринбурга</a>
                         <p>Такси Расписания</p>
                         <p>Междугородные автобусы</p>
-                        <div>
-                            <a href="">Афиша</a>
-                            <ul>
-                                <li>Детки напрокат <span>премьера в чт</span></li>
-                                <li>Тор: Рагнарёк <span>фэнтези</span></li>
-                                <li>Лига справедливости <span>фантастика</span></li>
-                                <li>Последний богатырь <span>приключения</span></li>
-                                <li>Убийство в Восточном… <span>драма</span></li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="films">
+                        <a href="">Афиша</a>
+                        <ul>
+                            <li>Детки напрокат <span>премьера в чт</span></li>
+                            <li>Тор: Рагнарёк <span>фэнтези</span></li>
+                            <li>Лига справедливости <span>фантастика</span></li>
+                            <li>Последний богатырь <span>приключения</span></li>
+                            <li>Убийство в Восточном… <span>драма</span></li>
+                        </ul>
                     </div>
                 </div>
             </section>
